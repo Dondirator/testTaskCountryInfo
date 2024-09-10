@@ -1,0 +1,37 @@
+.random-countries-widget-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.random-countries-widget-container h3 {
+  color: #28a745;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.holiday-list {
+  list-style: none;
+  padding: 0;
+}
+
+.holiday-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease;
+}
+
+.holiday-item:hover {
+  background-color: #e0e0e0;
+}
+
+.holiday-date {
+  background-color: #28a745;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}

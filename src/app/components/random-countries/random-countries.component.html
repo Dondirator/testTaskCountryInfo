@@ -1,0 +1,13 @@
+<div class="random-countries-widget-container">
+  <h3>Next Public Holidays for Random Countries</h3>
+
+  <ul class="holiday-list">
+    <li *ngFor="let holidayInfo of nextHolidays" class="holiday-item">
+      <span>
+        <strong>{{ holidayInfo.country }}</strong
+        >: {{ holidayInfo.holiday.localName }}
+      </span>
+      <span class="holiday-date">{{ holidayInfo.holiday.date }}</span>
+    </li>
+  </ul>
+</div>

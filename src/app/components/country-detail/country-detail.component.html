@@ -1,0 +1,30 @@
+<div class="country-details-container">
+  <div class="country-header">
+    <h2>{{ countryName }}</h2>
+    <h3>Public Holidays for {{ currentYear }}</h3>
+  </div>
+
+  <ul class="holiday-list">
+    <li *ngFor="let holiday of holidays" class="holiday-item">
+      <span>
+        <strong>{{ holiday.localName }}</strong> ({{ holiday.name }})
+      </span>
+      <span class="holiday-date">{{ holiday.date }}</span>
+    </li>
+  </ul>
+
+  <div class="year-buttons">
+    <button
+      *ngFor="
+        let year of [
+          2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030
+        ]
+      "
+      class="year-button"
+      [ngClass]="{ active: year === currentYear }"
+      (click)="loadHolidays(year)"
+    >
+      {{ year }}
+    </button>
+  </div>
+</div>

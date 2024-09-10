@@ -1,0 +1,63 @@
+.country-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.country-header h2 {
+  color: #1a73e8;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.country-header h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.holiday-list {
+  list-style: none;
+  padding: 0;
+}
+
+.holiday-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease;
+}
+
+.holiday-item:hover {
+  background-color: #e0e0e0;
+}
+
+.holiday-date {
+  background-color: #1a73e8;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.year-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.year-button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.year-button:hover {
+  background-color: #005cbf;
+}

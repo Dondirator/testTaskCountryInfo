@@ -1,0 +1,17 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px; /* Задайте высоту хедера */
+  background-color: #1a73e8; /* Цвет фона */
+  color: white; /* Цвет текста */
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+.active {
+  color: rgb(111, 224, 111);
+}

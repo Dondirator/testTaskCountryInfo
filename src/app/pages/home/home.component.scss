@@ -1,0 +1,61 @@
+.search-container {
+  position: relative;
+  margin: 0 auto;
+  width: 300px; /* Задайте ширину контейнера поиска по необходимости */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.country-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  padding: 0;
+  list-style-type: none;
+  z-index: 1000;
+}
+
+.country-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.country-item:hover {
+  background-color: #f0f0f0;
+}
+
+.country-item a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.country-item a:hover {
+  color: #1a73e8;
+}
+
+@media (max-width: 600px) {
+  .search-container {
+    width: 100%;
+  }
+}

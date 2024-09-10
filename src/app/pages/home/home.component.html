@@ -1,0 +1,17 @@
+<app-random-countries></app-random-countries>
+<div class="search-container">
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    (input)="onSearchChandge()"
+    placeholder="Search for a country..."
+  />
+
+  <ul *ngIf="filteredCountries.length > 0" class="country-list">
+    <li *ngFor="let country of filteredCountries" class="country-item">
+      <a [routerLink]="['/holidays', country.countryCode]">{{
+        country.name
+      }}</a>
+    </li>
+  </ul>
+</div>
