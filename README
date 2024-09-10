@@ -1,0 +1,5 @@
+1)git clone https://github.com/Dondirator/testTaskCountryInfo.git
+2)cd testTaskCountryInfo
+3)npm install
+4)Create a .env file in the root directory with the following content: API_BASE_URL=https://date.nager.at/api/v3
+5)npm start
